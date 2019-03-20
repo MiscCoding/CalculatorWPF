@@ -8,11 +8,16 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel VerticalAlignment="Center"
-                    Margin="10, 0">
-            <Label Content="Result"/>
-            <TextBox Text="0"/>
-            <TextBox Text="0"/>
-            <Button Content="Calculate"/>
+                    Margin="10">
+            <Label Content="Result"
+                   Margin="0,0,0,10"/>
+            <TextBox Text="0"
+                      Margin="0,0,0,10"/>
+            <TextBox Text="0"
+                      Margin="0,0,0,10"/>
+            <Button Content="Calculate"
+                    Background="DodgerBlue"
+                    Foreground="White"/>
         </StackPanel>
         
     </Grid>

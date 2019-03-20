@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            <Label/>
-            <TextBox/>
-            <TextBox/>
-            <Button/>
+        <StackPanel VerticalAlignment="Center"
+                    Margin="10, 0">
+            <Label Content="Result"/>
+            <TextBox Text="0"/>
+            <TextBox Text="0"/>
+            <Button Content="Calculate"/>
         </StackPanel>
         
     </Grid>

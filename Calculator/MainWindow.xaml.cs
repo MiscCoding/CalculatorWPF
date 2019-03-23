@@ -32,6 +32,7 @@ namespace Calculator
             negativeButton.Click += NegativeButton_Click;
             percentageButton.Click += PercentageButton_Click;
             equalButton.Click += EqualButton_Click;
+            periodButton.Click += pointButton_Click;
         }
 
         private void EqualButton_Click(object sender, RoutedEventArgs e)
@@ -176,6 +177,11 @@ namespace Calculator
         }
         public static double Divide(double n1, double n2)
         {
+            if(n2 == 0)
+            {
+                MessageBox.Show("Divide by zero not allowed", "Wrong operation", MessageBoxButton.OK, MessageBoxImage.Error);
+                return 0;
+            }
             return n1 / n2;
         }
     }
